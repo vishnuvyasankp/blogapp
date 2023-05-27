@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 export default function Nav1() {
     return (
         <div>
-            <Navbar bg="dark" variant="dark">
+           
                 <Container>
                     <Navbar.Brand href="/" ><h1>BlogApp</h1></Navbar.Brand>
                     <Nav className="text-center">
@@ -14,7 +14,7 @@ export default function Nav1() {
                         <Nav.Link href="Add">Add Blog</Nav.Link>
                     </Nav>
                 </Container>
-            </Navbar>
+            
         </div>
     )
 }
