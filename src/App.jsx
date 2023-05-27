@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Addform from './pages/Addform';
+import AddBlog from './pages/AddBlog';
 import Nav1 from './units/Nav1'
 
 
@@ -11,7 +11,7 @@ export default function App() {
     <Nav1></Nav1>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Add" element={<Addform />} />
+        <Route path="/Add" element={<AddBlog />} />
 
         
       </Routes>
