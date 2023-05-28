@@ -4,16 +4,19 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
 export default function AddBlog() {
+  
+  const handleClick =(e)=> {
+  };
   return (
     <div>
       <h1 className='text-center mt-5'>ADD BLOG</h1>
       <Container>
-      <Form>
+      <Form onSubmit={handleClick}>
         <Form.Group className="mb-3" controlId=" ">
           <Form.Label>Blog Name</Form.Label>
           <Form.Control type="text" placeholder=" " />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Group className="mb-3" controlId="">
           <Form.Label>Description</Form.Label>
           <Form.Control type="text" placeholder=" " />
         </Form.Group>
@@ -21,8 +24,9 @@ export default function AddBlog() {
           <Form.Label>Author Name</Form.Label>
           <Form.Control type="text" placeholder=" " />
         </Form.Group>
+        <Button variant="primary" type="submit" onClick={handleClick} >Submit</Button>{' '}
       </Form>
-      <Button variant="primary" >Submit</Button>{' '}
+      
       </Container>
     </div>
   )
